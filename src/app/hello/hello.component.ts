@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HelloComponent implements OnInit {
 
   message: string = 'Hello World';
+  imgUrl= "assets/BridgeLabzNewLogo.svg";
 
   ngOnInit(): void {
     this.message = "Hello from Bridgelabz";
