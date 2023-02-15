@@ -10,13 +10,14 @@ export class HelloComponent implements OnInit {
   message: string = 'Hello World';
   imgUrl= "assets/BridgeLabzNewLogo.svg";
   url= "https://www.bridgelabz.com";
+  userName: string = "";
 
   ngOnInit(): void {
     this.message = "Hello from Bridgelabz";
   }
 
-  handleClick(event:any) {
-    console.log("bridgelabz logo is clicked",event);
+  handleClick($event:any) {
+    console.log("bridgelabz logo is clicked",$event);
     window.open(this.url,"_blank")
   }
 }
